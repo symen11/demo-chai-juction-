@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173f35">
+  <title>Chai Junction | A little cup of happiness</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="topline">FRESHLY BREWED • LOCALLY LOVED • MADE WITH A LITTLE EXTRA HEART</div>
+  <header class="wrap nav">
+    <a class="brand" href="#home"><span class="brandmark">☕</span><span>Chai Junction<small>A LITTLE CUP OF
+          HAPPINESS</small></span></a>
+    <nav class="navlinks" id="navLinks"><a href="#menu">Menu</a><a href="#offers">Offers</a><a href="#visit">Find us</a>
+    </nav>
+    <div class="nav-actions"><button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="navLinks">☰</button>
+      <button class="cart-pill" id="openCart">Your cart <span id="cartCount">0</span></button>
+    </div>
+  </header>
+  <main>
+    <section class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow">YOUR NEIGHBOURHOOD CHAI SPOT</div>
+        <h1>Good days<br>start with<br><em>good chai.</em></h1>
+        <p>That first warm sip. A crispy bite. One more reason to slow down. Find your chai-time favourites at Chai
+          Junction.</p>
+        <div class="actions"><a class="btn primary" href="#menu">Explore the menu <span>↗</span></a><a
+            class="btn secondary" href="#visit">Visit our shop</a></div>
+        <p class="hero-note">✦ Demo website • Menu items and prices are sample details.</p>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a warm cup of tea">
+        <div class="sun"></div>
+        <div class="steam">〰</div>
+        <div class="cup">🍵</div>
+        <div class="art-label"><strong>Chai. Chill. Repeat.</strong><span>Your everyday little happy place</span></div>
+        <div class="stamp">BREWED<br>WITH<br>♥</div>
+      </div>
+    </section>
+    <section class="wrap info-strip">
+      <div class="info">
+        <div class="info-icon">🍃</div>
+        <div><strong>Freshly prepared</strong><small>Made fresh for every chai break</small></div>
+      </div>
+      <div class="info">
+        <div class="info-icon">🥟</div>
+        <div><strong>Chai-time bites</strong><small>Little snacks, big happiness</small></div>
+      </div>
+      <div class="info">
+        <div class="info-icon">💚</div>
+        <div><strong>Your local adda</strong><small>A cosy stop for your everyday</small></div>
+      </div>
+    </section>
+    <section class="wrap" id="special">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">A little something special</div>
+          <h2>Today's happy pick</h2>
+        </div>
+        <p>Something lovely for your next break.</p>
+      </div>
+      <div class="special">
+        <div class="special-visual">🫖</div>
+        <div class="special-copy">
+          <div class="section-kicker" style="color:#f3b45f">TODAY'S SPECIAL · DEMO</div>
+          <h3>Masala Chai + Samosa</h3>
+          <p>A warming cup of spiced chai paired with a crispy, golden snack. The classic combination for a little
+            afternoon reset.</p>
+          <div class="special-price">₹25 <span style="font-size:12px;font-weight:500;color:#d8e2d9">/ combo · sample
+              price</span></div><button class="btn" onclick="addItem('combo')">Add combo to cart <span>＋</span></button>
+        </div>
+      </div>
+    </section>
+    <section class="wrap" id="menu">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Made for your mood</div>
+          <h2>What's on the menu?</h2>
+        </div>
+        <p>Pick a favourite. Make it a moment.</p>
+      </div>
+      <div class="searchrow"><label class="searchbox"><span>⌕</span><input id="searchInput" type="search"
+            placeholder="Search chai, coffee, snacks..." aria-label="Search menu"></label></div>
+      <div class="filters" id="filters"><button class="filter active" data-cat="All">Everything</button><button
+          class="filter" data-cat="Chai">Chai</button><button class="filter" data-cat="Coffee">Coffee</button><button
+          class="filter" data-cat="Snacks">Snacks</button><button class="filter" data-cat="Combos">Combos</button></div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+    <section class="wrap offers" id="offers">
+      <div>
+        <div class="section-kicker">Little treats, lovely breaks</div>
+        <h2>Good chai.<br>Even better deals.</h2>
+        <div class="offer-list">
+          <div class="offer-row"><span style="font-size:22px">☕</span>
+            <div><b>Chai-time combo</b><small>Masala chai + samosa · sample offer</small></div><span
+              class="offer-code">₹25</span>
+          </div>
+          <div class="offer-row"><span style="font-size:22px">🥯</span>
+            <div><b>Snack break</b><small>Ginger chai + bun maska · sample offer</small></div><span
+              class="offer-code">₹35</span>
+          </div>
+        </div>
+      </div>
+      <div class="offer-art">🫖<div style="font:12px system-ui;color:#5d695e;margin-top:8px">A little warmth goes a long
+          way.</div>
+      </div>
+    </section>
+    <section class="wrap" id="visit">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Come say hello</div>
+          <h2>Your chai stop.</h2>
+        </div>
+        <p>Shop details are placeholders for this demo.</p>
+      </div>
+      <div class="visit">
+        <div class="visit-card">
+          <h3>Plan your visit</h3>
+          <div class="visit-line"><span class="emoji">📍</span>
+            <div><strong>Shop location</strong><small>Demo location — add the real shop address before
+                publishing.</small></div>
+          </div>
+          <div class="visit-line"><span class="emoji">🕘</span>
+            <div><strong>Opening hours</strong><small>Sample hours: Every day, 8:00 AM – 9:00 PM<br>Please confirm
+                actual timings with the shop owner.</small></div>
+          </div>
+          <div class="visit-line"><span class="emoji">📞</span>
+            <div><strong>Quick order</strong><small>WhatsApp ordering can be connected when the shop's number is
+                added.</small></div>
+          </div><a class="btn secondary" href="#menu">Choose your chai ↓</a>
+        </div>
+        <div class="visit-card">
+          <h3>Scan for the digital menu</h3>
+          <div class="qr-area"><img id="qrImage" alt="QR code for this menu page" src="">
+            <div><strong style="font-size:13px">Menu on your phone</strong>
+              <p id="qrText">Once this page is hosted online, scan the QR code to open the menu.</p><button
+                class="btn secondary" style="padding:10px 13px;font-size:11px" id="refreshQr">Refresh QR</button>
+            </div>
+          </div>
+          <p class="fineprint">QR code uses the current page address. For a real shop, deploy this site first and print
+            the QR from the public URL. Local file QR codes won't work for customers.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap footrow"><a class="brand" href="#home"><span class="brandmark"
+          style="background:#f2b45f;color:#173f35">☕</span><span>Chai Junction<small style="color:#c8d6cc">A LITTLE CUP
+            OF HAPPINESS</small></span></a><small>Demo project · CODE THAT HELPS · Built with HTML, CSS &
+        JavaScript</small></div>
+  </footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-top">
+      <h2>Your cart</h2><button class="close" id="closeCart" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total" id="cartTotal"></div>
+  </aside>
+  <div class="toast" id="toast"></div>
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
